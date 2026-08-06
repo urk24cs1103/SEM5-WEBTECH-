@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 03 - HTML5 & CSS3 Styling & Layouts</title>
+    <style>
+        body {
+            background-color: #f4f7f6;
+            background-image: url("moneys.jpg");
+            background-size: 600px 400px;
+            background-repeat: repeat;
+            
+            font-family: Georgia, Garamond, serif;
+            color: #2c3e50;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            width: 85%;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            padding-top: 25px;
+            padding-bottom: 25px;
+            padding-left: 20px;
+            padding-right: 20px;
+            
+            background-color: #F5FFFA;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            margin-bottom: 0px;
+        }
+
+        h1 {
+            color: #1a365d;
+            font-size: 28px;
+            font-weight: bolder;
+            font-style: normal;
+            letter-spacing: 3px;
+            text-align: center;
+            text-decoration: underline;
+            text-shadow: 2px 2px 4px #cbd5e1;
+            margin: 0 0 10px 0;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-style: italic;
+            color: #4a5568;
+            letter-spacing: 1px;
+            margin: 0;
+        }
+
+        .normal-flow-section {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        .custom-margin-paragraph {
+            margin-top: 15px;
+            margin-bottom: 25px;
+            margin-left: 20px;
+            margin-right: 20px;
+            
+
+            text-align: justify;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        ul.custom-list {
+            list-style-type: circle;
+            padding-left: 40px;
+        }
+
+        ul.custom-list li {
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+
+
+        .multicolumn-section {
+            background-color: #ffffff;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        .multicolumn-content {
+            column-count: 2;
+            column-gap: 40px;
+            column-rule: 2px dashed #cbd5e1;
+            text-align: justify;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        .interactive-section {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .nav-menu {
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        .custom-link {
+            display: inline-block; 
+            width: 180px;          
+            height: 35px;          
+            line-height: 35px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 5px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        a.custom-link:link {
+            background-color: #e0f2fe;
+            color: #0369a1;
+        }
+
+        a.custom-link:visited {
+            background-color: #f3e8ff;
+            color: #6b21a8;
+        }
+
+        a.custom-link:hover {
+            background-color: #dcfce7;
+            color: #15803d;
+        }
+
+        a.custom-link:active {
+            background-color: #ffe4e6;
+            color: #be123c;
+        }
+        main {
+            flex: 1;
+        }
+        footer {
+        background-color: #fcf7f7; 
+        color: #013f12;
+        padding: 0 40px 40px;     
+                   
+}
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Finance & Investment Blog</h1>
+            <p class="subtitle">Demonstrating HTML5 Structure and CSS3 Properties</p>
+        </header>
+        <section class="normal-flow-section">
+            <h2>1. Asset Allocation Strategy</h2>..
+            <p class="custom-margin-paragraph">
+                Asset allocation is the cornerstone of risk management in personal finance. Spreading capital across equities, debt instruments, and real estate protects portfolios against severe market swings while supporting long-term growth.
+            </p>
+
+            <h3>Core Asset Categories:</h3>
+            <ul class="custom-list">
+                <li>Equity Mutual Funds & Index ETFs</li>
+                <li>Fixed Income Securities & Bonds</li>
+                <li>Real Estate & Physical Commodities</li>
+            </ul>
+        </section>
+
+        <section class="multicolumn-section">
+            <h2>2. The Power of Compound Interest</h2>
+            <div class="multicolumn-content">
+                <p>
+                    Compound interest allows investments to generate returns on previous gains in addition to the principal amount. Over extended periods, compounding creates exponential growth that outpaces traditional savings accounts.
+                </p>
+                <p>
+                    Dollar-Cost Averaging (DCA) is an ideal strategy to leverage compounding. Investing a fixed amount regularly eliminates market timing risks and lowers the average purchase price over time.
+                </p>
+            </div>
+        </section>
+
+        <section class="interactive-section">
+            <h2>3. Financial Tools & Calculators</h2>
+            <p>Access our free interactive calculators to model future portfolio growth:</p>
+            
+            <div class="nav-menu">
+                <a href="#sip-calculator" class="custom-link">SIP Calculator</a>
+                <a href="https://example.com" class="custom-link">Stock Screener</a>
+                <a href="#risk-tool" class="custom-link">Risk Assessment</a>
+            </div>
+        </section>
+    </div>
+
+    <hr>
+    <div> 
+        <p background-color: "white"><i>&copy; 2026 Student Finance Blog. All rights reserved.</i></p>
+    </div>
+</body>
+</html>
