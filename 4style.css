@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #0f172a;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    border-bottom: 2px solid #10b981;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo {
+    width: 45px;
+    height: 45px;
+}
+
+.brand-name {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+
+nav {
+    background: transparent;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: #e2e8f0;
+    text-decoration: none;
+    display: block;
+    padding: 12px 24px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+nav ul li:hover > a {
+    background: #10b981;
+    color: #ffffff;
+    border-radius: 4px;
+}
+
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #1e293b;
+    width: 200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    border-radius: 0 0 6px 6px;
+    z-index: 100;
+}
+
+.dropdown li {
+    width: 100%;
+}
+
+.dropdown li a {
+    padding: 12px 18px;
+    color: #cbd5e1;
+    font-size: 14px;
+}
+
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+.dropdown li:hover a {
+    background: #059669;
+    color: #ffffff;
+}
+
+
+.container {
+    background: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75)), 
+                url("https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1500&q=80");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 70px 20px;
+    min-height: calc(100vh - 180px);
+}
+
+.box {
+    background: #ffffff;
+    width: 360px;
+    padding: 35px 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    border-top: 4px solid #10b981;
+}
+
+.box h2 {
+    text-align: center;
+    margin-bottom: 24px;
+    color: #0f172a;
+    font-size: 22px;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    font-size: 14px;
+    color: #475569;
+    margin-bottom: 6px;
+}
+
+input[type=text],
+input[type=email],
+input[type=password] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=password]:focus {
+    border-color: #10b981;
+}
+input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: #10b981;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+input[type=submit]:hover {
+    background: #059669;
+}
+footer {
+    background: #0f172a;
+    color: #94a3b8;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    line-height: 1.6;
+    border-top: 1px solid #334155;
+}
